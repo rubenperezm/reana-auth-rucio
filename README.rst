@@ -58,6 +58,13 @@ additional files present in this repository:
 Changes
 =======
 
+Version 1.1.0 (2023-08-22)
+--------------------------
+
+- Changes Rucio client version to 1.30.0.
+- Changes installation to use fully-qualified container image names to be Podman friendly.
+- Fixes EGI trustanchors installation troubles by switching to CERN CA bundles.
+
 Version 1.0.0 (2022-10-13)
 --------------------------
 

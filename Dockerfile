@@ -5,13 +5,18 @@ USER root
 
 COPY ./linuxsupport7s-stable.repo /etc/yum.repos.d/
 
-# Add the rucio configuration template
+# Add Rucio client configuration template
 COPY --chown=user:user files/rucio.cfg.j2 /opt/user/rucio.cfg.j2
 
-# Add CA certificates
-RUN yum -y install ca-certificates ca-policy-egi-core && \
-    yum install -y CERN-CA-certs && \
-    yum clean all && \
+# Add EGI CA certificates
+COPY ./EGI-trustanchors.repo /etc/yum.repos.d/
+
+# Install certificates
+RUN yum -y install \
+        CERN-CA-certs \
+        ca-certificates \
+        ca-policy-egi-core && \
+    yum -y clean all && \
     rm -rf /var/cache/yum
 
 USER user

@@ -45,7 +45,7 @@ Inside the container Rucio commands can be executed, for example via:
   $ rucio whoami
 
 Dependencies
-=============
+============
 
 Building the container and successfully obtaining Rucio configuration requires
 additional files present in this repository:
@@ -57,6 +57,11 @@ additional files present in this repository:
 
 Changes
 =======
+
+Version 1.1.1 (UNRELEASED)
+--------------------------
+
+- Adds more WLCG certificates to facilitate data access to outside-CERN sites.
 
 Version 1.1.0 (2023-08-22)
 --------------------------

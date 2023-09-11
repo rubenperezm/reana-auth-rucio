@@ -58,7 +58,7 @@ additional files present in this repository:
 Changes
 =======
 
-Version 1.1.1 (UNRELEASED)
+Version 1.1.1 (2023-09-11)
 --------------------------
 
 - Adds more WLCG certificates to facilitate data access to outside-CERN sites.

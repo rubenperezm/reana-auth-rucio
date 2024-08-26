@@ -1,0 +1,8 @@
+[linuxsoft-alma9]
+name=AlmaLinux 9 - CERN
+baseurl=http://linuxsoft.cern.ch/cern/alma/9/CERN/$basearch
+enabled=1
+gpgcheck=False
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-koji file:///etc/pki/rpm-gpg/RPM-GPG-KEY-kojiv2
+priority=1
+protect=1

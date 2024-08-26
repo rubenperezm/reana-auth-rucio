@@ -1,9 +1,9 @@
-ARG BASETAG=release-1.30.0
+ARG BASETAG=release-35.2.0
 FROM docker.io/rucio/rucio-clients:$BASETAG
 
 USER root
 
-COPY ./linuxsupport7s-stable.repo /etc/yum.repos.d/
+COPY ./linuxsoft-alma9.repo /etc/yum.repos.d/
 
 # Add Rucio client configuration template
 COPY --chown=user:user files/rucio.cfg.j2 /opt/user/rucio.cfg.j2
